@@ -1,6 +1,6 @@
 import { memo } from "react";
-import { Text } from '@chakra-ui/react';
-import { Heading } from '@chakra-ui/react';
+// import { Text } from '@chakra-ui/react';
+// import { Heading } from '@chakra-ui/react';
 
 const BooksResult = memo((props) => {
 
@@ -15,8 +15,8 @@ const BooksResult = memo((props) => {
             <a href={item.link} target='_blank' >
               <img src={item.image} />
               <div className='p16'>
-                <Heading as='h2' size='xl' mt='10'>{item.title}</Heading>
-                <Text align='justify' fontSize='xl' mt='10'>{item.description}</Text>
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
               </div>
             </a>
           </div>)

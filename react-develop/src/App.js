@@ -1,7 +1,7 @@
 import useSearch from "./hooks/useSearch";
 import BooksResult from "./components/BooksResult";
-import { Input } from '@chakra-ui/react';
-import { Heading } from '@chakra-ui/react';
+// import { Input } from '@chakra-ui/react';
+// import { Heading } from '@chakra-ui/react';
 
 const BooksSearch = () => {
 
@@ -9,9 +9,9 @@ const BooksSearch = () => {
 
   return (
     <div>
-      <Heading as='h1' size='xl' mb='5'>本を検索する</Heading>
+      <h1>本を検索する</h1>
       <form onSubmit={searchBooks} className="text-xl">
-        <Input onChange={handleNewBooks} value={value} />
+        <input onChange={handleNewBooks} value={value} />
       </form>
       <BooksResult items={items} />
     </div>
